@@ -4,3 +4,5 @@
 @import './components/page.css';
 @import './components/button.css';
 @import './components/chat.css';
+@import './components/chat-window.css';
+@import './components/sidebar.css';
