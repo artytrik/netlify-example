@@ -10,8 +10,8 @@
     "@parcel/transformer-pug": "^2.0.1"
   },
   "scripts": {
-    "start": "./node_modules/.bin/parcel index.pug",
-    "build": "./node_modules/.bin/parcel build index.pug"
+    "start": "parcel ./src/index.pug",
+    "build": "parcel build ./src/index.pug"
   },
   "author": "Artem Trikashnyi",
   "license": "ISC"
