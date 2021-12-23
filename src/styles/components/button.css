@@ -1,5 +1,12 @@
 .button {
-  padding: 25px;
-  background-color: blue;
+  padding: 12px;
+  background-color: var(--blue);
   color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: var(--dark-blue);
 }

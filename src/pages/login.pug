@@ -1,4 +1,16 @@
 extends ../layouts/main.pug
 
 block primary
-  div Логин
+  section.login.modal
+    h2.login__header.modal__header Вход
+    form.login__form
+      .login__input-wrapper
+        label.login__input-block.input-block
+          span.input-block__label Логин
+          input.input-block__field(type="text")
+        label.login__input-block.input-block
+          span.input-block__label Пароль
+          input.input-block__field(type="password")
+      .login__link-wrapper
+        a.login__button.button(href="./index.pug") Войти
+        a.login__link(href="./registration.pug") Регистрация
