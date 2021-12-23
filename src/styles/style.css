@@ -7,5 +7,5 @@
 @import './components/chat-window.css';
 @import './components/sidebar.css';
 @import './components/modal.css';
-@import './components/login.css';
+@import './components/authorize.css';
 @import './components/input-block.css';
