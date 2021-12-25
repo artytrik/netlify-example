@@ -5,6 +5,13 @@
   padding: 0;
 }
 
+.additional-information__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .additional-information__item {
   display: flex;
   justify-content: space-between;
@@ -32,4 +39,17 @@
 .additional-information__link--red {
   text-decoration: none;
   color: var(--red);
+}
+
+.additional-information__input {
+  font: inherit;
+  color: var(--dark-grey);
+  border: none;
+  padding: 0;
+  text-align: right;
+}
+
+.additional-information__button {
+  width: 70%;
+  align-self: center;
 }
