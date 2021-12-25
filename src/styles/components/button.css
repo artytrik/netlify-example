@@ -5,6 +5,9 @@
   border-radius: 8px;
   text-decoration: none;
   text-align: center;
+  border: none;
+  cursor: pointer;
+  line-height: 1rem;
 }
 
 .button:hover {

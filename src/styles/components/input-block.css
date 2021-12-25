@@ -13,6 +13,8 @@
   font: inherit;
   border: none;
   border-bottom: 1px solid var(--blue);
+  font-size: 1.1rem;
+  padding: 0.25rem 0;
 }
 
 .input-block:hover .input-block__label {
