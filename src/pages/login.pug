@@ -7,8 +7,8 @@ block primary
       h2.authorize__header Вход
       form.authorize__form
         .authorize__input-wrapper
-          +input-block('Логин', 'text')
-          +input-block('Пароль', 'password')
+          +input-block('Логин', 'text', 'login')
+          +input-block('Пароль', 'password', 'password')
         .authorize__link-wrapper
           a.authorize__button.button(href="./index.pug") Войти
           a.authorize__link(href="./registration.pug") Регистрация
