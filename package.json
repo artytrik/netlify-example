@@ -1,15 +1,24 @@
 {
   "name": "yandex-chat",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pet-project чата",
   "dependencies": {
-    "parcel": "^2.0.1"
+    "express": "^4.17.2",
+    "parcel": "^2.0.1",
+    "pug": "^3.0.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.0.1"
+  },
   "scripts": {
-    "dev": "./node_modules/.bin/parcel index.html",
-    "build": "./node_modules/.bin/parcel build index.html"
+    "dev": "parcel ./src/pages/*.pug",
+    "expressServer": "node ./server.js",
+    "build": "parcel build ./src/pages/*.pug",
+    "start": "npm run build && npm run expressServer"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Artem Trikashnyi",
+  "license": "ISC",
+  "engines": {
+    "node": ">16.0.0"
+  }
 }
