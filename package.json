@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Pet-project чата",
   "dependencies": {
+    "express": "^4.17.2",
     "parcel": "^2.0.1",
     "pug": "^3.0.2"
   },
@@ -10,9 +11,14 @@
     "@parcel/transformer-pug": "^2.0.1"
   },
   "scripts": {
-    "start": "parcel ./src/pages/*.pug",
-    "build": "parcel build ./src/pages/*.pug"
+    "dev": "parcel ./src/pages/*.pug",
+    "expressServer": "node ./server.js",
+    "build": "parcel build ./src/pages/*.pug",
+    "start": "npm run build && npm run expressServer"
   },
   "author": "Artem Trikashnyi",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": ">16.0.0"
+  }
 }
